@@ -10,7 +10,7 @@ export const getAllUsers = async (): Promise<Users[]> => {
   }
 
   return (await response.json()) as Users[];
-};
+}
 
 export const postUser = async (user: NewUser): Promise<Users> => {
   const response = await fetch(API_URL, {
@@ -37,8 +37,9 @@ export const updateUser = async (
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      name: updateData.name,
+      name: updateData.username,
       email: updateData.email,
+      password: updateData.password,
     }),
   });
 

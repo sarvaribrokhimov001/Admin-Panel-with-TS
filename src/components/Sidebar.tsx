@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className='w-[100%]'>
+    <div className='w-full'>
         <h1>sidebar</h1>
     </div>
   )
